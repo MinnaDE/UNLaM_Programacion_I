@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1397337517 source:/home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/main.c
+	<stdio.h>
+	<stdlib.h>
+	"numeros.h"
+
+1397335901 /home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/numeros.h
+	<math.h>
+
+1397338042 source:/home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/numeros.c
+	"numeros.h"
+
