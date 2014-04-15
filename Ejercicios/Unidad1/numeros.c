@@ -1,4 +1,5 @@
 #include "numeros.h"
+#include "arreglos.h"
 
 double factorial(unsigned number)
 {
@@ -62,17 +63,43 @@ int belongsToFibonacciSerie(unsigned number)
 
 double seno(float x, float tol)
 {
-    double term, result = 0, signo, exp, aux3;
+    double term, result = 0;
     int i = 1;
 
     do {
-        signo = pow(-1, i-1);
-        exp = pow(x, 2*i - 1);
-
         term = pow(-1, i-1) * pow(x, 2*i - 1) / factorial(2*i - 1);
         result += term;
         i++;
     } while (fabs(term) >= tol);
 
     return result;
+}
+
+void getDivisors(unsigned number, int * divisors)
+{
+    int pos = 1, i;
+
+    divisors[0] = 1;
+
+    for (i = 2; i < number; i++) {
+        if (number % i == 0) {
+            divisors[pos++] = i;
+        }
+    }
+}
+
+char * clasifyNaturalNumber(unsigned number)
+{
+    int sum = 0, divisors[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, limit = sizeof(divisors) / sizeof(divisors[0]);
+
+    getDivisors(number, divisors);
+
+    sum = sumOfArrayElements(divisors, limit);
+
+    if (sum > number)
+        return "perfecto";
+    else if (sum < number)
+        return "deficiente";
+    else
+        return "perfecto";
 }

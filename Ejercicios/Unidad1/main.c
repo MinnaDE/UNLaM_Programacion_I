@@ -33,9 +33,22 @@ int main()
 
     realNumber = 1.5;
     float pi = 3.1416;
-    printf("6) El seno de %.2f pi siendo la tolerancia %.4f es %.4lf", realNumber, tol, seno(realNumber*pi, tol));
+    printf("6) El seno de %.2f pi siendo la tolerancia %.4f es %.4lf\n", realNumber, tol, seno(realNumber*pi, tol));
 
+//    int i = 0,
+//        divisores[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+//        limit = sizeof(divisores)/sizeof(divisores[0]);
+//    number = 8;
+//    getDivisors(number, divisores);
+//    printf("7) Los divisores de %u son : ", number);
+//
+//    while (i < limit && divisores[i])
+//        printf("%d, ", divisores[i++]);
+//
+//    printf("\n");
 
+    number = 12;
+    printf("7) El natural %u es %s\n", number, clasifyNaturalNumber(number));
 
     return 0;
 }
