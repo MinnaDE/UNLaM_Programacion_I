@@ -43,7 +43,7 @@ double raizCuadrada(unsigned x, float tol)
         term1 = term2;
         term2 = 0.5 * (term1 + (x/term1));
 
-    } while (term2 - term1 >= tol);
+    } while (fabs(term2 - term1) >= tol);
 
     return term2;
 }
@@ -97,9 +97,15 @@ char * clasifyNaturalNumber(unsigned number)
     sum = sumOfArrayElements(divisors, limit);
 
     if (sum > number)
-        return "perfecto";
+        return "abundante";
     else if (sum < number)
         return "deficiente";
     else
         return "perfecto";
+}
+
+void obtener_cociente_y_resto(unsigned a, unsigned b, int * cociente, int * resto)
+{
+    *cociente = a / b;
+    *resto = a % b;
 }

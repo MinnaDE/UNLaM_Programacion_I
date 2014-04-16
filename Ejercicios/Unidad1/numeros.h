@@ -10,4 +10,6 @@ int belongsToFibonacciSerie(unsigned);
 double seno(float, float);
 void getDivisors(unsigned, int *);
 char * clasifyNaturalNumber(unsigned);
+void obtener_cociente_y_resto(unsigned, unsigned, int *, int *);
+
 #endif // NUMEROS_H_INCLUDED

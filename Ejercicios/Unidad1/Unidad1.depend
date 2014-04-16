@@ -1,18 +1,24 @@
 # depslib dependency file v1.0
-1397597822 source:/home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/main.c
+1397610165 source:/home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/main.c
 	<stdio.h>
 	<stdlib.h>
 	"numeros.h"
+	"fecha.h"
 
-1397596895 /home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/numeros.h
+1397610982 /home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/numeros.h
 	<math.h>
 
-1397598875 source:/home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/numeros.c
+1397610817 source:/home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/numeros.c
 	"numeros.h"
 	"arreglos.h"
 
-1397598924 source:/home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/arreglos.c
+1397609933 source:/home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/arreglos.c
 	"arreglos.h"
 
 1397598847 /home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/arreglos.h
+
+1397609563 source:/home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/fecha.c
+	"fecha.h"
+
+1397609464 /home/guillermo/UNLaM/Programacion/Ejercicios/Unidad1/fecha.h
 

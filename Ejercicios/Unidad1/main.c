@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "numeros.h"
+#include "fecha.h"
 
 int main()
 {
@@ -47,8 +48,18 @@ int main()
 //
 //    printf("\n");
 
-    number = 12;
+    number = 6;
     printf("7) El natural %u es %s\n", number, clasifyNaturalNumber(number));
+
+    t_fecha fecha = {13, 04, 2014};
+    printf("La fecha %d/%d/%d es %s\n", fecha.d, fecha.m, fecha.a, (valida_fecha(&fecha)) ? "valida" : "invalida");
+
+    number = 13;
+    number2 = 5;
+    int cociente;
+    int resto;
+    obtener_cociente_y_resto(number, number2, &cociente, &resto);
+    printf("9) El cociente entre %u y %u es %d el resto es %d", number, number2, cociente, resto);
 
     return 0;
 }
