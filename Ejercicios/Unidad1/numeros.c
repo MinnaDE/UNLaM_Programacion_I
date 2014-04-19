@@ -32,9 +32,6 @@ double exponencial(int x, float tol)
     return result;
 }
 
-/**
-* Revisar porque tiene tan baja precición, el ejercicio no redacta correctamente el algoritmo a utilizar.
-*/
 double raizCuadrada(unsigned x, float tol)
 {
     double term1, term2 = 1;
@@ -108,4 +105,55 @@ void obtener_cociente_y_resto(unsigned a, unsigned b, int * cociente, int * rest
 {
     *cociente = a / b;
     *resto = a % b;
+}
+
+unsigned sumOfNNaturalNumbers(unsigned number)
+{
+    unsigned result = 0;
+    int i;
+
+    for (i = 0; i < number; i++)
+        result += number - i;
+
+    return result;
+}
+
+unsigned sumOfNPairsNaturalNumbers(unsigned number)
+{
+    unsigned result = 0;
+    int i = 2, counter = 0;
+
+    while (counter < number) {
+        if (i % 2 == 0) {
+            result += i;
+            counter++;
+        }
+
+        i++;
+    }
+
+    return result;
+}
+
+unsigned sumOfAllPairsNaturalNumbersPreviousTo(unsigned number)
+{
+    unsigned result = 0;
+    int i;
+
+    for (i = 1; i < number; i++)
+        if ((number - i) % 2 == 0)
+            result += number - i;
+
+    return result;
+}
+
+int isPrime(unsigned number)
+{
+    int i;
+
+    for (i = 2; i < number - 1; i++)
+        if (number % i == 0)
+            return FALSO;
+
+    return VERDADERO;
 }

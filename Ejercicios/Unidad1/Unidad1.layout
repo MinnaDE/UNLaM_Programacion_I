@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="arreglos.c" open="1" top="1" tabpos="5">
+	<File name="arreglos.c" open="1" top="0" tabpos="4">
 		<Cursor position="135" topLine="0" />
 	</File>
-	<File name="main.c" open="1" top="0" tabpos="2">
-		<Cursor position="1205" topLine="34" />
+	<File name="main.c" open="1" top="1" tabpos="2">
+		<Cursor position="1690" topLine="45" />
 	</File>
 	<File name="numeros.c" open="1" top="0" tabpos="1">
-		<Cursor position="1812" topLine="81" />
+		<Cursor position="2077" topLine="91" />
 	</File>
 	<File name="numeros.h" open="1" top="0" tabpos="3">
-		<Cursor position="354" topLine="0" />
+		<Cursor position="419" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

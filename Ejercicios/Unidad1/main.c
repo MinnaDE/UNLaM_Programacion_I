@@ -59,7 +59,19 @@ int main()
     int cociente;
     int resto;
     obtener_cociente_y_resto(number, number2, &cociente, &resto);
-    printf("9) El cociente entre %u y %u es %d el resto es %d", number, number2, cociente, resto);
+    printf("9) El cociente entre %u y %u es %d el resto es %d\n", number, number2, cociente, resto);
+
+    number = 3;
+    printf("10) La suma de los primeros %u naturales es %u\n", number, sumOfNNaturalNumbers(number));
+
+    number = 4;
+    printf("11) La suma de los primeros %u naturales pares es %u\n", number, sumOfNPairsNaturalNumbers(number));
+
+    number = 6;
+    printf("12) La suma de los naturales pares menores a %u es %u\n", number, sumOfAllPairsNaturalNumbersPreviousTo(number));
+
+    number = 17;
+    printf("13) El numero natural %u %s\n", number, isPrime(number) ? "es primo" : "no es primo");
 
     return 0;
 }
